@@ -62,7 +62,7 @@ a:hover {
 }
 
 .nav-container {
- 	width: 50%;
+ 	width: 60%;
  	margin: 0 auto;
 }
 
@@ -71,7 +71,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     margin-bottom: 2em;
     pointer-events: none;
@@ -105,7 +105,7 @@ a:hover {
 
 .highlights-container {
 	margin: 0 auto;
-	width: 50%;
+	width: 60%;
 }
 
 .grid-container {
@@ -187,18 +187,19 @@ footer {
         width: 100%;
         max-width: 300px;
         height: auto;
-        margin: 1em auto;
+        margin: 0.5em auto;
     }
 
     .hero-container {
         flex-direction: column;
     	text-align: center;
-    	padding-top: 6em; /* instead of 10em */
+    	padding-top: 6em;
     	margin-bottom: 1.5em;
     }
 
     .hero-text {
         margin: 0;
+        padding: 0;
     }
 
 	nav ul {
