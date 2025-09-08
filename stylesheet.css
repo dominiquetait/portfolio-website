@@ -46,6 +46,7 @@ ol {
 }
 
 a {
+	color: white;
 	float: none;
 	text-decoration: none;
 	font-size: 1.25em;
