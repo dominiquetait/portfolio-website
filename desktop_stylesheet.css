@@ -208,4 +208,12 @@ footer {
 	    align-items: center;
 	    gap: 0.5em;
 	}
+
+	.nav-container,
+	.hero-container,
+	.highlights-container {
+		width: 95%;
+	}
+
+
 }
