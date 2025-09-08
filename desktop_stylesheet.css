@@ -232,7 +232,7 @@ footer {
 	}
 
 	footer {
-		justify-items: center;
+		text-align: center;
 		padding-top: 0.025rem;
 		padding-bottom: 0.025rem;
 		bottom: 0;
