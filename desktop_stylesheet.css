@@ -191,7 +191,7 @@ footer {
     .hero-container {
         flex-direction: column;
     	text-align: center;
-    	padding-top: 6em;
+    	padding-top: 3em;
     	margin-bottom: 1.5em;
     }
 
@@ -207,6 +207,7 @@ footer {
     }
 
 	nav {
+		position: relative;
 		top: 0px;
 		left: 0px;
 		float: left;
