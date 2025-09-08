@@ -211,7 +211,7 @@ footer {
 		top: 0px;
 		left: 0px;
 		float: left;
-		list-style-type: none;
+		list-style-type: none;		
 		width: 100%;
 		padding-top: 2em;
 		padding-bottom: 2em;
@@ -236,6 +236,7 @@ footer {
 		padding-top: 0.025rem;
 		padding-bottom: 0.025rem;
 		bottom: 0;
+		margin: 0 auto;
 		position: relative;
 	}
 
