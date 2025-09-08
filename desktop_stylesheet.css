@@ -15,7 +15,7 @@ body {
 	font-family: Arial;
 	background-color: #101010;
 	color: white;
-	padding: 0;
+	padding-bottom: 80px;
 	margin: 0;
 }
 
@@ -185,7 +185,6 @@ footer {
 
     .hero-image img {
         width: 100%;
-        max-width: 300px;
         height: auto;
         margin: 0.5em auto;
     }
@@ -197,23 +196,49 @@ footer {
     	margin-bottom: 1.5em;
     }
 
+    .highlights-container {
+    	display: flex;
+    	flex-direction: column;
+    	margin: 0 auto;
+    }
+
     .hero-text {
         margin: 0;
         padding: 0;
     }
 
-	nav ul {
-	    display: flex;
-	    flex-direction: column;
-	    align-items: center;
-	    gap: 0.5em;
+	nav {
+		top: 0px;
+		left: 0px;
+		float: left;
+		list-style-type: none;
+		width: 100%;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+	}
+
+	ul {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		font-size: 0.5em;
 	}
 
 	.nav-container,
 	.hero-container,
 	.highlights-container {
-		width: 95%;
+		width: 90%;
 	}
 
+	footer {
+		justify-items: center;
+		padding-top: 0.025rem;
+		padding-bottom: 0.025rem;
+	}
 
+	.grid-container {
+	    grid-template-columns: 1fr;
+	    gap: 1em;
+	}
 }
