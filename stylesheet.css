@@ -97,6 +97,12 @@ nav li:first-child {
     pointer-events: none;
 }
 
+.header-container {
+    padding-top: 2em;
+    width: 60%;
+    margin: 0 auto;
+}
+
 header {
     padding-right: 1em;
     padding-bottom: 1em;
@@ -132,7 +138,8 @@ header p {
     margin-left: auto;
 }
 
-.friends-image img {
+.friends-image img,
+.me-image img {
     width: 100%;
     height: auto;
     border-radius: 20px;
@@ -149,7 +156,8 @@ header p {
 
 div.hero-image a,
 div.food-image a,
-div.friends-image a {
+div.friends-image a,
+div.me-image a {
     margin: 0;
     padding: 0;
     pointer-events: none;
@@ -222,6 +230,52 @@ footer {
     background-color: #101010;
 }
 
+.contact-container div header {
+    padding-right: 0;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.contact-container section {
+    width: 90%;
+    flex-direction: column;
+}
+
+.contact-container section h4 {
+    margin: 1em 0 1em 0;
+    padding: 0;
+    text-align: center;
+}
+
+.contact-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form div {
+    padding-bottom: 1.5em;
+}
+
+form div input:not(.button),
+form div textarea {
+    width: 40%;
+    padding: 1.5em;
+    border-radius: 5px;
+    border: 1px solid #505050;
+}
+
+.button {
+    width: 30%;
+    padding: 1.5em 1em;
+    background-color: #d84040;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+}
+
 table,
 th,
 td {
@@ -282,6 +336,13 @@ td.busy {
         margin-bottom: 1.5em;
     }
 
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+    }
+
     .highlights-container {
         display: flex;
         flex-direction: column;
@@ -303,12 +364,13 @@ td.busy {
         padding: 1em;
         border-radius: 0.5em;
     }
-    
+
     table {
         width: 100%;
     }
 
-    th, td {
+    th,
+    td {
         padding: 2px;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -357,5 +419,14 @@ td.busy {
         bottom: 0;
         margin: 2em auto;
         position: relative;
+    }
+
+    form div input:not(.button),
+    form div textarea {
+        width: 90%;
+    }
+
+    .button {
+        width: 90%;
     }
 }

@@ -11,54 +11,92 @@
     </head>
 
     <body>
-		<main>
-			<nav>
-				<ul class="sidebar">
-					<li onclick="closeSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-					<li><span class="brand-style">DT</span></li>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="2_about.html">ABOUT</a></li>
-					<li><a href="3_career.html">CAREER</a></li>
-					<li><a href="4_video.html">VIDEO</a></li>
-					<li><a href="5_animations.html">ANIMATIONS</a></li>
-					<li><a href="6_contact.html">CONTACT</a></li>
-				</ul>
-				<ul>
-					<li><span class="brand-style">DT</span></li>
-					<li class="hideOnMobile"><a href="index.html">HOME</a></li>
-					<li class="hideOnMobile"><a href="2_about.html">ABOUT</a></li>
-					<li class="hideOnMobile"><a href="3_career.html">CAREER</a></li>
-					<li class="hideOnMobile"><a href="4_video.html">VIDEO</a></li>
-					<li class="hideOnMobile"><a href="5_animations.html">ANIMATIONS</a></li>
-					<li class="hideOnMobile"><a href="6_contact.html">CONTACT</a></li>
-					<li class="menu-button" onclick="openSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-				</ul>
-			</nav>
+        <main>
+            <nav>
+                <ul class="sidebar">
+                    <li onclick="closeSidebar()">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3">
+                                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li><span class="brand-style">DT</span></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="2_about.html">ABOUT</a></li>
+                    <li><a href="3_career.html">CAREER</a></li>
+                    <li><a href="4_video.html">VIDEO</a></li>
+                    <li><a href="5_animations.html">ANIMATIONS</a></li>
+                    <li><a href="6_contact.html">CONTACT</a></li>
+                </ul>
+                <ul>
+                    <li><span class="brand-style">DT</span></li>
+                    <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+                    <li class="hideOnMobile"><a href="2_about.html">ABOUT</a></li>
+                    <li class="hideOnMobile"><a href="3_career.html">CAREER</a></li>
+                    <li class="hideOnMobile"><a href="4_video.html">VIDEO</a></li>
+                    <li class="hideOnMobile"><a href="5_animations.html">ANIMATIONS</a></li>
+                    <li class="hideOnMobile"><a href="6_contact.html">CONTACT</a></li>
+                    <li class="menu-button" onclick="openSidebar()">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
-			<script>
-				function openSidebar(){
-					const sidebar = document.querySelector('.sidebar')
-					sidebar.style.display = 'flex'
-				}
+            <script>
+                function openSidebar() {
+                    const sidebar = document.querySelector(".sidebar");
+                    sidebar.style.display = "flex";
+                }
 
-				function closeSidebar(){
-					const sidebar = document.querySelector('.sidebar')
-					sidebar.style.display = 'none'
-				}
-			</script>
+                function closeSidebar() {
+                    const sidebar = document.querySelector(".sidebar");
+                    sidebar.style.display = "none";
+                }
+            </script>
 
-			<div class="hero-container">
-				<header>
-					<h1>Contact inforamtion</h1>
-				</header>
+			<div class="contact-container">
+				<div>
+					<header>
+						<h1>Contact Information</h1>
+					</header>
+				</div>
+
+				<section>
+					<h4>GET IN TOUCH</h4>
+					<form method="post" action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php ">					
+						<div>
+							<input type="text" name="email" placeholder="Email" />
+						</div>
+
+						<div>
+							<input type="number" name="number" placeholder="Phone Number" />
+						</div>
+
+						<div>
+							<input type="text" name="firstname" placeholder="First Name" />
+						</div>
+
+						<div>
+							<input type="text" name="surname" placeholder="Surname" />
+						</div>
+											
+						<div>
+							<textarea name="message" maxlength="1000" placeholder="Message"></textarea>
+						</div>
+
+						<div id="submit-button">
+							<input class="button" type="submit" value="Submit" />
+						</div>
+					</form>
+           	 	</section>
 			</div>
 
-			<section>
-				<h4>Contact Subtitles</h4>
-				<p>Contact text</p>
-			</section>
-
-			<footer><p>Copyright © 2025, Dominique Tait</p></footer>
-		</main>
+            <footer><p>Copyright © 2025, Dominique Tait</p></footer>
+        </main>
     </body>
 </html>
