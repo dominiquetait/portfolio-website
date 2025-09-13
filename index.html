@@ -1,72 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="utf-8">
-	<meta name="description" content="Web Development">
-	<meta name="keywords" content="Portfolio Website">
-	<meta name="author" content="Dominique Tait">
-	<title>Portfolio Website</title>
-</head>
+    <head>
+        <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <meta name="description" content="Web Development" />
+        <meta name="keywords" content="Portfolio Website" />
+        <meta name="author" content="Dominique Tait" />
+        <title>Portfolio Website</title>
+    </head>
 
+    <body>
+		<main>
+			<nav>
+				<ul class="sidebar">
+					<li onclick="closeSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+					<li><span class="brand-style">DT</span></li>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="2_about.html">ABOUT</a></li>
+					<li><a href="3_career.html">CAREER</a></li>
+					<li><a href="4_video.html">VIDEO</a></li>
+					<li><a href="5_animations.html">ANIMATIONS</a></li>
+					<li><a href="6_contact.html">CONTACT</a></li>
+				</ul>
+				<ul>
+					<li><span class="brand-style">DT</span></li>
+					<li class="hideOnMobile"><a href="index.html">HOME</a></li>
+					<li class="hideOnMobile"><a href="2_about.html">ABOUT</a></li>
+					<li class="hideOnMobile"><a href="3_career.html">CAREER</a></li>
+					<li class="hideOnMobile"><a href="4_video.html">VIDEO</a></li>
+					<li class="hideOnMobile"><a href="5_animations.html">ANIMATIONS</a></li>
+					<li class="hideOnMobile"><a href="6_contact.html">CONTACT</a></li>
+					<li class="menu-button" onclick="openSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+				</ul>
+			</nav>
 
-<body>
-	<!-- Horizontal Navigation Bar -->
-	<nav>
-		<div class="nav-container">
-			<ol>
-				<li id="dt">DT</li>
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="2_about.html">ABOUT</a></li>
-				<li><a href="3_career.html">CAREER</a></li>	
-				<li><a href="4_video.html">VIDEO</a></li>
-				<li><a href="5_contact.html">CONTACT</a></li>
-			</ol>
-		</div>
-	</nav>
+			<script>
+				function openSidebar(){
+					const sidebar = document.querySelector('.sidebar')
+					sidebar.style.display = 'flex'
+				}
 
-	<!-- Main landing page text -->
-	<div class="hero-container">
-		<div class="hero-text">
-			<header><h2>Hi! My name is Dominique!</h2></header>
+				function closeSidebar(){
+					const sidebar = document.querySelector('.sidebar')
+					sidebar.style.display = 'none'
+				}
+			</script>
 
-			<h1>Game Developer</h1>
+			<div class="hero-container">
+				<header>
+					<h1>Hi! My name is Dominique!</h1>
+					<h2>Game Developer</h2>
+					<p>Turning ideas into creative experiences.</p>
+				</header>       
 
-			<p id="text">Turning ideas into creative experiences.</p>
-			
-		</div>
-
-		<div class="hero-image">
-			<a href="images/test.png">
-				<img src="images/test.png" alt="Hero image" />
-			</a>
-		</div>
-
-	</div>	
-
-	<!-- Highlights Section -->
-	<div class="highlights-container">
-		
-		<p id="subtitle">HIGHLIGHTS</p>
-
-		<div class="grid-container">
-		  
-			<div class="grid-item">
-			    <p id="grid-item-text">STUDENT</p>
+				<div class="hero-image">
+					<a href="images/test.png">
+						<img src="images/test.png" alt="Hero image" />
+					</a>
+				</div>
 			</div>
-			
-			<div class="grid-item">
-			    <p id="grid-item-text">GAME DEVELOPER</p>
-			</div>
-			
-			<div class="grid-item-link">
-			   	<p id="grid-item-link"><strong>CONTACT</strong></p>
-			</div>
-		</div>
-	</div>
 
-	<footer><p>Copyright © 2025, Dominique Tait</p></footer>
-</body>
+			<section>
+				<h4>HIGHLIGHTS</h4>
 
-</html>	
+				<div class="grid-container">
+					<div class="grid-item">
+						<h3>STUDENT</h3>
+					</div>
+
+					<div class="grid-item">
+						<h3>GAME DEVELOPER</h3>
+					</div>
+
+					<div class="grid-item">
+						<a href="6_animations.html">
+							<h3>CONTACT</h3>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<footer><p>Copyright © 2025, Dominique Tait</p></footer>
+		</main>
+    </body>
+</html>
