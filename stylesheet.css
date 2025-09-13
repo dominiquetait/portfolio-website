@@ -310,7 +310,9 @@ td.busy {
 
     th, td {
         padding: 2px;
-        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 11px;
     }
 
     section p {
