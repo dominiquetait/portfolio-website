@@ -87,18 +87,18 @@ nav li:first-child {
 }
 
 .hero-container {
-    padding-top: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 60%;
     margin: 0 auto;
-    margin-bottom: 2em;
     pointer-events: none;
 }
 
 header {
-    padding-right:  1em;
+    padding-right: 1em;
     padding-bottom: 1em;
 }
 
@@ -122,7 +122,8 @@ header p {
     margin: 0 auto;
 }
 
-.hero-image img {
+.hero-image img,
+.food-image img {
     height: clamp(200px, 23vw, 450px);
     width: clamp(200px, 23vw, 450px);
     border-radius: 20px;
@@ -131,21 +132,49 @@ header p {
     margin-left: auto;
 }
 
-div.hero-image a {
+.friends-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: fill;
+    box-shadow: 5px 5px 0px 0px #d84040;
+    margin-top: 1em;
+}
+
+.interests-container p {
+    padding-right: 2em;
+    align-items: center;
+    display: flex;
+}
+
+div.hero-image a,
+div.food-image a,
+div.friends-image a {
     margin: 0;
     padding: 0;
+    pointer-events: none;
+}
+
+.interests-container {
+    display: flex;
 }
 
 section {
     margin: 0 auto;
     width: 60%;
     color: white;
+    padding: 1.25em;
+}
+
+section p {
+    text-align: justify;
+    font-size: clamp(16px, 1.75vw, 24px);
 }
 
 section h4 {
     color: #7c7c7c;
-    margin-bottom: 1em;
     font-weight: normal;
+    padding-bottom: 0.25em;
 }
 
 .grid-container {
@@ -193,11 +222,41 @@ footer {
     background-color: #101010;
 }
 
+table,
+th,
+td {
+    color: black;
+    border: 1px solid #7c7c7c;
+    border-collapse: collapse;
+    background-color: #dddddd;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+th,
+td {
+    padding: 1vw;
+}
+
+th {
+    color: white;
+    background-color: #d84040;
+    border: 1px solid #d84040;
+}
+
+td.busy {
+    background-color: #b9b9b9;
+}
+
 /* Mobile Phones & Smaller Screens */
 @media screen and (max-width: 800px) {
     .hideOnMobile {
         display: none;
     }
+
     .menu-button {
         display: block;
     }
@@ -243,6 +302,35 @@ footer {
     .grid-item {
         padding: 1em;
         border-radius: 0.5em;
+    }
+    
+    table {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    th, td {
+        padding: 0;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    .food-image img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .interests-container {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .interests-container p {
+        padding: 0;
+        padding-bottom: 1em;
     }
 
     header h1 {
