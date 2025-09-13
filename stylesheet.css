@@ -168,7 +168,7 @@ section {
 
 section p {
     text-align: justify;
-    font-size: clamp(16px, 1.75vw, 24px);
+    font-size: clamp(16px, 2vw, 18px);
 }
 
 section h4 {
@@ -305,12 +305,12 @@ td.busy {
     }
     
     table {
-        font-size: 14px;
         width: 100%;
     }
 
     th, td {
-        padding: 0;
+        padding: 2px;
+        font-size: 14px;
     }
 
     section p {
