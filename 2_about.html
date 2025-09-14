@@ -50,12 +50,12 @@
 			<script>
 				function openSidebar(){
 					const sidebar = document.querySelector('.sidebar')
-					sidebar.style.display = 'flex'
+					sidebar.classList.add('show');
 				}
 
 				function closeSidebar(){
 					const sidebar = document.querySelector('.sidebar')
-					sidebar.style.display = 'none'
+					sidebar.classList.remove('show');
 				}
 			</script>
 
@@ -72,18 +72,20 @@
 
 			<section>
 				<h4>HOMETOWN</h4>
-				<p>
-					I was born in Durban, South Africa, and grew up between Durban and Johannesburg before moving to Australia 
-					in 2012. After living in Brisbane and Perth, I settled in Melbourne in 2018, where I currently reside. My 
-					hometown, Durban, is a vibrant coastal city known for its golden beaches along the Indian Ocean, year-round 
-					subtropical climate, and being home to the busiest port in Africa. It's also famous for its rich cultural 
-					mix, Indian cuisine - especially the iconic 'bunny chow' - and being a hub for surfing and outdoor activities.
-				</p>
-
-				<div class="me-image">
-					<a href="images/2010-06-20.jpg">
-						<img src="images/2010-06-20.jpg" alt="food image" />
-					</a>
+				<div class="hometown-container">
+					<div class="me-image">
+						<a href="images/2010-06-20.jpg">
+							<img src="images/2010-06-20.jpg" alt="food image" />
+						</a>
+					</div>
+					
+					<p>
+						I was born in Durban, South Africa, and grew up between Durban and Johannesburg before moving to Australia 
+						in 2012. After living in Brisbane and Perth, I settled in Melbourne in 2018, where I currently reside. My 
+						hometown, Durban, is a vibrant coastal city known for its golden beaches along the Indian Ocean, year-round 
+						subtropical climate, and being home to the busiest port in Africa. It's also famous for its rich cultural 
+						mix, Indian cuisine - especially the iconic 'bunny chow' - and being a hub for surfing and outdoor activities.
+					</p>
 				</div>
 			</section>
 
@@ -95,7 +97,7 @@
 					strengthened my time management skills but also gave me the confidence to pursue a career in games development.
 				</p>
 			</section>
-
+			
 			<section>
 				<h4>INTERESTS</h4>
 				<div class="interests-container">
@@ -118,7 +120,7 @@
 
 			<section>
 				<p>
-					I also enjoy spending time with friends, and the image above shows me with a few of them at a nice restaurant 
+					I also enjoy spending time with friends, and the image below shows me with a few of them at a nice restaurant 
 					in Melbourne. I chose this photo because it was taken on my 21st birthday, when we all went out to celebrate together.
 				</p>
 

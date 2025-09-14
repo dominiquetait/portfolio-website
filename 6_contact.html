@@ -48,16 +48,16 @@
             </nav>
 
             <script>
-                function openSidebar() {
-                    const sidebar = document.querySelector(".sidebar");
-                    sidebar.style.display = "flex";
-                }
+				function openSidebar(){
+					const sidebar = document.querySelector('.sidebar')
+					sidebar.classList.add('show');
+				}
 
-                function closeSidebar() {
-                    const sidebar = document.querySelector(".sidebar");
-                    sidebar.style.display = "none";
-                }
-            </script>
+				function closeSidebar(){
+					const sidebar = document.querySelector('.sidebar')
+					sidebar.classList.remove('show');
+				}
+			</script>
 
 			<div class="contact-container">
 				<div>
@@ -68,10 +68,11 @@
 
 				<section>
 					<h4>GET IN TOUCH</h4>
-					<form method="post" action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php ">					
-						<div>
-							<input type="text" name="email" placeholder="Email" />
-						</div>
+					<form method="post" action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php">					
+						<div id="message-info">
+                            <label for="email"><h3>Message Information</h3></label>
+                            <input id="email" type="text" name="email" placeholder="Email" />
+                        </div>
 
 						<div>
 							<input type="number" name="number" placeholder="Phone Number" />
@@ -86,10 +87,10 @@
 						</div>
 											
 						<div>
-							<textarea name="message" maxlength="1000" placeholder="Message"></textarea>
+							<textarea name="message" maxlength="700" placeholder="Message"></textarea>
 						</div>
 
-						<div id="submit-button">
+						<div>
 							<input class="button" type="submit" value="Submit" />
 						</div>
 					</form>

@@ -48,12 +48,12 @@
 			<script>
 				function openSidebar(){
 					const sidebar = document.querySelector('.sidebar')
-					sidebar.style.display = 'flex'
+					sidebar.classList.add('show');
 				}
 
 				function closeSidebar(){
 					const sidebar = document.querySelector('.sidebar')
-					sidebar.style.display = 'none'
+					sidebar.classList.remove('show');
 				}
 			</script>
 

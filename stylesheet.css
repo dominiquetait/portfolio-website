@@ -40,6 +40,10 @@ a {
     color: white;
 }
 
+nav a {
+    transition: all 0.3s ease;
+}
+
 nav a:hover {
     text-decoration-line: underline;
     text-decoration-color: #d84040;
@@ -70,11 +74,16 @@ nav li:first-child {
     z-index: 199;
     background-color: #101010de;
     box-shadow: 0px 5px 5px 0px black;
-    display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     backdrop-filter: blur(10px);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.sidebar.show {
+    transform: translateX(0);
 }
 
 .sidebar li,
@@ -129,7 +138,8 @@ header p {
 }
 
 .hero-image img,
-.food-image img {
+.food-image img,
+.me-image img {
     height: clamp(200px, 23vw, 450px);
     width: clamp(200px, 23vw, 450px);
     border-radius: 20px;
@@ -138,8 +148,7 @@ header p {
     margin-left: auto;
 }
 
-.friends-image img,
-.me-image img {
+.friends-image img {
     width: 100%;
     height: auto;
     border-radius: 20px;
@@ -154,6 +163,12 @@ header p {
     display: flex;
 }
 
+.hometown-container p {
+    padding-left: 2em;
+    align-items: center;
+    display: flex;
+}
+
 div.hero-image a,
 div.food-image a,
 div.friends-image a,
@@ -164,6 +179,10 @@ div.me-image a {
 }
 
 .interests-container {
+    display: flex;
+}
+
+.hometown-container {
     display: flex;
 }
 
@@ -202,11 +221,14 @@ section h4 {
     border: 4px solid #d84040;
     border-radius: 0.5em;
     background-color: #101010;
+    transition: transform 0.3s ease;
 }
 
 .grid-item:hover {
     background-color: #101010;
     border: 4px solid #d84040;
+    transform: translateY(-5px);
+    border-color: #ee5656;
 }
 
 .grid-item:last-child {
@@ -228,6 +250,12 @@ footer {
     border-top: 1px solid #202020;
     color: #505050;
     background-color: #101010;
+}
+
+#message-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
 }
 
 .contact-container div header {
@@ -254,15 +282,19 @@ footer {
 }
 
 form div {
-    padding-bottom: 1.5em;
+    margin-bottom: 1.5em;
 }
 
-form div input:not(.button),
+form div input,
 form div textarea {
     width: 40%;
     padding: 1.5em;
     border-radius: 5px;
     border: 1px solid #505050;
+}
+
+form div textarea {
+    min-height: 120px;
 }
 
 .button {
@@ -274,6 +306,16 @@ form div textarea {
     color: white;
     cursor: pointer;
     align-items: center;
+}
+
+hr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #505050;
+    width: 60%;
 }
 
 table,
@@ -381,13 +423,20 @@ td.busy {
         font-size: 16px;
     }
 
-    .food-image img {
+    .food-image img,
+    .me-image img {
         width: 100%;
         height: auto;
         margin: 0 auto;
     }
 
-    .interests-container {
+    .hometown-container p {
+        padding: 0;
+        margin-top: 1em;
+    }
+
+    .interests-container, 
+    .hometown-container {
         flex-direction: column;
         margin: 0 auto;
     }
@@ -427,6 +476,16 @@ td.busy {
     }
 
     .button {
+        width: 90%;
+    }
+
+    hr {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px;
+        border-color: #505050;
         width: 90%;
     }
 }
