@@ -361,6 +361,16 @@ td.busy {
     background-color: #b9b9b9;
 }
 
+
+aside {
+    margin-top: 1em;
+}
+
+aside ol {
+    margin: 1em;
+    margin-top: 0;
+}
+
 /* Mobile Phones & Smaller Screens */
 @media screen and (max-width: 800px) {
     .hideOnMobile {
