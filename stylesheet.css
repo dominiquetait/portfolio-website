@@ -41,13 +41,27 @@ a {
 }
 
 nav a {
-    transition: all 0.3s ease;
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #d84040;
+    transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+  width: 100%;
 }
 
 nav a:hover {
-    text-decoration-line: underline;
-    text-decoration-color: #d84040;
-    text-decoration-thickness: 4px;
     background-color: #202020;
 }
 
@@ -435,7 +449,7 @@ td.busy {
         margin-top: 1em;
     }
 
-    .interests-container, 
+    .interests-container,
     .hometown-container {
         flex-direction: column;
         margin: 0 auto;
